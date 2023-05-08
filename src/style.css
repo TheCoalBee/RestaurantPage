@@ -8,8 +8,7 @@
 
 #content {
     background-image: url("https://cdn.vox-cdn.com/thumbor/R0hTdBdQX2YhELVFtnwQN0EqCF4=/0x0:6376x4251/1200x675/filters:focal(2678x1616:3698x2636)/cdn.vox-cdn.com/uploads/chorus_image/image/72204781/Eater_HungryEyes_April2023_24__1_.0.jpg");
-    background-size: cover;
-    height:100vh;
+    min-height:100vh;
     width:100vw;
     display:flex;
     flex-direction: column;
@@ -28,8 +27,9 @@ header ul li {
     color:white;
     font-weight:lighter;
     letter-spacing: 2px;
-    padding:15px;
+    padding:15px 15px 10px 15px;
     transition: all 0.1s ease;
+    border-bottom:5px solid transparent;
 }
 li:hover {
     cursor:pointer;
@@ -37,8 +37,12 @@ li:hover {
     color:black;
     mix-blend-mode: lighten;
 }
+.active {
+    padding-bottom:10px;
+    border-bottom:5px solid white;
+}
 
-.hero-text {
+#home {
     display:flex;
     flex-direction: column;
     height:75vh;
@@ -48,13 +52,13 @@ li:hover {
     text-transform: uppercase;
 }
 
-h1 {
+#home h1 {
     font-size: 92px;
     font-weight: normal;
     letter-spacing: -3px;
 }
 
-h2 {
+#home h2 {
     text-transform: lowercase;
     font-weight:normal;
     font-size:36px;
@@ -62,21 +66,62 @@ h2 {
     margin-top:-15px;
 }
 
-.hero-text button {
+#home button {
     border:none;
-    padding:15px;
+    padding:15px 15px 10px 15px;
     font-size:24px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    background-color:transparent;
+    color:white;
+    font-weight:lighter;
+    transition:0.1s ease all;
+    border-bottom:5px solid white;
+}
+
+#home button:hover {
+    cursor:pointer;
     background-color:white;
     color:black;
     mix-blend-mode: lighten;
-    font-weight:lighter;
-    transition:0.1s ease all;
+    border-bottom:5px solid transparent;
 }
 
-.hero-text button:hover {
-    cursor:pointer;
+#menu {
+    background-color:transparent;
+    padding:15px 50px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.menu-item {
+    flex:1;
+    background-color: white;
+    display:flex;
+    height:200px;
+    min-width:450px;
+}
+.menu-desc {
+    padding:15px;
+    display:flex;
+    flex-direction: column;
+}
+
+.menu-img {
+    height:200px;
+}
+
+.menu-name {
+    text-transform: uppercase;
+    font-size:24px;
     color:black;
-    transform:scale(1.1);
+    font-weight:lighter;
+    letter-spacing: 2px;
+    margin-bottom:15px;
+}
+
+.menu-price {
+    margin-top:auto;
 }
