@@ -30,6 +30,9 @@ header ul li {
     padding:15px 15px 10px 15px;
     transition: all 0.1s ease;
     border-bottom:5px solid transparent;
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -webkit-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -moz-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
 }
 li:hover {
     cursor:pointer;
@@ -56,6 +59,9 @@ li:hover {
     font-size: 92px;
     font-weight: normal;
     letter-spacing: -3px;
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -webkit-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -moz-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
 }
 
 #home h2 {
@@ -64,6 +70,9 @@ li:hover {
     font-size:36px;
     margin-bottom:15px;
     margin-top:-15px;
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -webkit-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -moz-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
 }
 
 #home button {
@@ -77,6 +86,9 @@ li:hover {
     font-weight:lighter;
     transition:0.1s ease all;
     border-bottom:5px solid white;
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -webkit-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -moz-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
 }
 
 #home button:hover {
@@ -102,6 +114,9 @@ li:hover {
     display:flex;
     height:200px;
     min-width:450px;
+    box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
 }
 .menu-desc {
     padding:15px;
@@ -124,4 +139,77 @@ li:hover {
 
 .menu-price {
     margin-top:auto;
+}
+
+form {
+    background-color:transparent;
+    display:flex;
+    flex-direction: column;
+    margin:15px 50px;
+    height: 500px;
+}
+
+form label {
+    text-transform: uppercase;
+    font-size:24px;
+    color:white;
+    font-weight:lighter;
+    letter-spacing: 2px;
+    margin-bottom:5px;
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -webkit-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -moz-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+}
+form input, form textarea {
+    margin-bottom:20px;
+}
+
+form input[type="text"] {
+    outline:none;
+    padding:15px;
+    font:inherit;
+    font-size:16px;
+    border:none;
+    box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+}
+
+form textarea {
+    font-size:16px;
+    outline:none;
+    padding:15px;
+    height:250px;
+    border:none;
+    box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+}
+
+form input[type="submit"] {
+    border:none;
+    padding:15px 15px 10px 15px;
+    font-size:24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color:white;
+    font-weight:lighter;
+    transition:0.1s ease all;
+    border-bottom: 5px solid white;
+    text-align: left;
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -webkit-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+    -moz-text-shadow: 10px 10px 20px rgba(0,0,0,0.39);
+}
+
+form input[type="submit"]:hover {
+    cursor:pointer;
+    background-color: white;
+    color:black;
+    mix-blend-mode: lighten;
+    border-bottom:5px solid transparent;
+    box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.39);
 }

@@ -61,14 +61,14 @@ export default function createHeaderDOM() {
             listItems[i].classList.remove("active");
         }
         li3.classList.add("active");
-        /* Create contact DOM() */
+        createContactDOM();
     })
 
     ul.append(li1,li2,li3);
     header.append(ul);
 
     content.prepend(header);
-    createMenuDOM();
+    createContactDOM();
 }
 
 function createMenuDOM() {
@@ -112,4 +112,43 @@ function createMenuDOM() {
     }
     
     content.append(menu);
+}
+
+function createContactDOM() {
+    const content = document.getElementById('content');
+    let DOMtoDelete = content.childNodes[1];
+    content.removeChild(DOMtoDelete);
+
+    const listItems = document.getElementsByTagName('li');
+    const contactTab = document.getElementById('contact-tab');
+    for (let i = 0; i < listItems.length; i++) {
+        listItems[i].classList.remove("active");
+    }
+    contactTab.classList.add('active');
+
+    const contactForm = document.createElement('form');
+    
+    const nameLabel = document.createElement('label');
+    const name = document.createElement('input');
+    const messageLabel = document.createElement('label');
+    const message = document.createElement('textarea');
+    const submit = document.createElement('input');
+
+    name.type = "text";
+    submit.type = "submit";
+    name.id = "form-name";
+    message.id = "form-message";
+
+    nameLabel.for = "form-name";
+    messageLabel.for = "form-message";
+    nameLabel.textContent = "Name";
+    name.placeholder= "Colby Ricks";
+    messageLabel.textContent = "Message";
+    message.placeholder = "Your message here...";
+
+    contactForm.id = "form";
+
+    contactForm.append(nameLabel, name, messageLabel, message, submit);
+
+    content.append(contactForm);
 }
