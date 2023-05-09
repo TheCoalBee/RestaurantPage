@@ -68,7 +68,7 @@ export default function createHeaderDOM() {
     header.append(ul);
 
     content.prepend(header);
-    createContactDOM();
+    createHomeDOM();
 }
 
 function createMenuDOM() {
@@ -142,7 +142,7 @@ function createContactDOM() {
     nameLabel.for = "form-name";
     messageLabel.for = "form-message";
     nameLabel.textContent = "Name";
-    name.placeholder= "Colby Ricks";
+    name.placeholder= "John Appleseed";
     messageLabel.textContent = "Message";
     message.placeholder = "Your message here...";
 
